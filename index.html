@@ -15,43 +15,49 @@
         </div>
         <div id="market">
             <div class="item">
-                <a href="#" class="fruit lemon" onclick="lemonIncrease()"></a>
-                <div>
-                    <div class="loader_bar">
-                        <div id="lemon"></div>
+                <a href="#" class="fruit lemon"></a>
+                <div class="loader_bar">
+                    <div id="lemon"></div>
+                    <div class="loader_items">
+                        <div class="buy">Buy more</div>
+                        <div id="class">Seconds</div>
                     </div>
-                    <div>
-                        <div>Buy more</div>
-                        <div>Seconds</div>
-                    </div>
-                </div>
+                </div>   
             </div>
             <div class="item">
-                <a href="#" class="fruit kiwi" onclick="kiwiIncrease()"></a>
-                <div>
+                    <a href="#" class="fruit kiwi"></a>
                     <div class="loader_bar">
                         <div id="kiwi"></div>
                     </div>
                     <div>
-                        <div>Buy more</div>
-                        <div>Seconds</div>
+                        <div class="buy">Buy more</div>
+                        <div id="class">Seconds</div>
                     </div>
-                </div>
             </div>
             <div class="item">
-                <a href="#" class="fruit strawbery" onclick="strawberyIncrease()"></a>
-                <div>
+                    <a href="#" class="fruit strawbery"></a>
                     <div class="loader_bar">
                         <div id="strawbery"></div>
                     </div>
                     <div>
-                        <div>Buy more</div>
-                        <div>Seconds</div>
+                        <div class="buy">Buy more</div>
+                        <div id="class">Seconds</div>
                     </div>
-                </div>
+            </div>
+            <div class="item">
+                <a href="#" class="fruit banana rotate_fruit"></a>
+                <div class="loader_bar">
+                    <div id="banana"></div>
+                    <div class="loader_items">
+                        <div class="buy">Buy more</div>
+                        <div id="class">Seconds</div>
+                    </div>
+                </div> 
             </div>
         </div>
     </div>
+    <button onclick="fruitManager('lemon')">Lemon</button>
+    <button onclick="fruitManager('banana')">Banana</button>
     <script src="functions.js"></script>
 </body>
 </html>
