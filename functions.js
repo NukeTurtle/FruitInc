@@ -1,34 +1,17 @@
+
+
 let moneyTotal = 0;
 const moneyDiv = document.querySelector("#money_total")
 moneyDiv.innerHTML = "$" + moneyTotal.toFixed(2);
 
 //* FRUITS *//
-const fruits = [
-    {
-        name: "lemon",
-        cost: 4,
-        money: 1,
-        time: 1
-    },
-    {
-        name: "kiwi",
-        cost: 20,
-        money: 60,
-        time: 2
-    },
-    {
-        name: "strawbery",
-        cost: 400,
-        money: 50080,
-        time: 3
-    },
-    {
-        name: "banana",
-        cost: 2000,
-        money: 500000,
-        time: 4,
-    },
-]
+// {
+//     name: "lemon",
+//     cost: 4,
+//     money: 1,
+//     time: 1,
+//     quantity: 0,
+// },
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -92,7 +75,7 @@ buyFruitButtons.forEach(button => {
     })
 })
 
-async function fruitManager(fruitName) {
+function fruitManager(fruitName) {
     let fruitButton = document.querySelector("." + fruitName);
     console.log(fruitName.index)
     const fruit = fruits.filter((fru) => fru.name)[0];
@@ -105,7 +88,7 @@ async function fruitManager(fruitName) {
         console.log("fruit.cost: ",fruit.cost);
         console.log("fruit.money: ",fruit.money);
         console.log("fruit.time: ",fruit.time);
-        await sleep((fruit.time * 1000));
+        sleep((fruit.time * 1000));
     }
 
     // const fruitManagerButtons = document.querySelectorAll(".fruit");
@@ -128,3 +111,14 @@ async function testFunc() {
     await sleep(5000);
     console.log("test");
 }
+
+
+
+
+
+
+// setup item UX
+// animation function for each fruit
+// function to buy fruit
+// function to sell fruit
+// function to display seconds
