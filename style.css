@@ -27,11 +27,11 @@ body{
     gap: 1rem;
 }
 .item[locked]{
-    border: 4px solid transparent;
+    border: 4px solid blue;
 }
 .fruit{
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     display: block;
     background: url("fruits.jpg");
     background-size: 400px;
@@ -40,23 +40,23 @@ body{
     border: 4px solid #fff;
 }
 .fruit.disabled{
-    border: 4px solid transparent;
+    border: 4px solid green;
 }
 .lemon{
-    background-position-x: 79px;
-    background-position-y: 1px;
+    background-position-x: 77px;
+    background-position-y: -1px;
 }
 .kiwi{
-    background-position-x: 4px;
-    background-position-y: -40px;
+    background-position-x: 2px;
+    background-position-y: -41px;
 }
 .strawbery{
-    background-position-x: 282px;
-    background-position-y: 0px;
+    background-position-x: 280px;
+    background-position-y: -2px;
 }
 .banana{
-    background-position-x: 363px;
-    background-position-y: -239px;
+    background-position-x: 361px;
+    background-position-y: -237px;
 }
 .loader_bar{
     width: 201px;

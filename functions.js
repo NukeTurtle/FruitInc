@@ -33,7 +33,7 @@ fruitButtons.forEach(button => {
         if(clickName == fruit.name) {
             button.parentElement.style.cursor = "not-allowed";
             button.style.pointerEvents = "none";
-            button.style.borderColor = "transparent";
+            button.style.borderColor = "red";
             const nthDifference = Math.round((3.74 + (0.01 * (multiplier * multiplier)) + (0.25 * multiplier) + Number.EPSILON) * 100) / 100;
             fruit.cost = nthDifference;
             console.log(nthDifference)
